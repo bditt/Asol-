@@ -2,3 +2,7 @@
 .vs/
 
 output/
+
+mcreverse-inject/x64/
+
+mcreverse-main/x64/
