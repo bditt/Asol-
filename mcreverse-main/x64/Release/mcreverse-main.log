@@ -1,0 +1,30 @@
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(438,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  buffer.c
+  hde32.c
+  hde64.c
+  hook.c
+  trampoline.c
+  create_remote_thread.cpp
+  c_entity.cpp
+  c_esp.cpp
+  c_glrender.cpp
+  c_legit.cpp
+  c_movement.cpp
+  c_visuals.cpp
+  c_world.cpp
+  entry.cpp
+  c_minecraft.cpp
+  enum_process_modules.cpp
+  sdk.cpp
+  c_gltext.cpp
+  math.cpp
+  open_gl.cpp
+  open_process.cpp
+  vec.cpp
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xtgmath.h(22,72): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating code
+  417 of 421 functions (99.0%) were compiled, the rest were copied from previous compilation.
+    83 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  mcreverse-main.vcxproj -> D:\Source Codes\Aspect-MC\output\cheat\AspectMC.dll
