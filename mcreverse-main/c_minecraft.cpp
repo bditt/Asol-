@@ -91,7 +91,7 @@ void c_main::hook( void ) {
 		}
 
 		/* ~~ run hacks here ~~ */
-		c_legit::get( ).handle( );
+		//c_legit::get( ).handle( );
 		c_movement::get( ).handle( );
 
 		//Sleep( 250 );

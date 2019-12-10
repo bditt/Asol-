@@ -205,4 +205,9 @@
       <Filter>sdk\structs\header</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Mappings.txt">
+      <Filter>sdk</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

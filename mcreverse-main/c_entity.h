@@ -48,13 +48,13 @@ public:
 	}
 
 	bool is_alive( ) {
-		jmethodID alive = minecraft->m_jenv->GetMethodID( minecraft->m_jenv->GetObjectClass( java_class ), "ai", "()Z" );
+		jmethodID alive = minecraft->m_jenv->GetMethodID( minecraft->m_jenv->GetObjectClass( java_class ), "aO", "()Z" );
 		return minecraft->m_jenv->CallBooleanMethod( java_class, alive );
 	}
 
 	bool is_sprinting()
 	{
-		jmethodID sprinting = minecraft->m_jenv->GetMethodID(minecraft->m_jenv->GetObjectClass(java_class), "aw", "()Z");
+		jmethodID sprinting = minecraft->m_jenv->GetMethodID(minecraft->m_jenv->GetObjectClass(java_class), "bp", "()Z");
 		return minecraft->m_jenv->CallBooleanMethod(java_class, sprinting);
 	}
 

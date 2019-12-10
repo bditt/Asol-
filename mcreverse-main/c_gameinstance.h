@@ -8,8 +8,8 @@
 class c_gameinstance {
 public:
 	jobject get_minecraft( ) {
-		jclass minecraft_class = minecraft->m_jenv->FindClass( "ave" );
-		jmethodID find_minecraft = minecraft->m_jenv->GetStaticMethodID( minecraft_class, "A", "()Lave;" );
+		jclass minecraft_class = minecraft->m_jenv->FindClass( "dbl" );
+		jmethodID find_minecraft = minecraft->m_jenv->GetStaticMethodID( minecraft_class, "E", "()Lave;" );
 		return minecraft->m_jenv->CallStaticObjectMethod( minecraft_class, find_minecraft );
 	}
 
@@ -19,17 +19,17 @@ public:
 	}
 
 	jobject get_screen( ) {
-		jfieldID get_screen = minecraft->m_jenv->GetFieldID( minecraft->m_jenv->GetObjectClass( get_minecraft( ) ), "m", "Laxu;" );
+		jfieldID get_screen = minecraft->m_jenv->GetFieldID( minecraft->m_jenv->GetObjectClass( get_minecraft( ) ), "x", "Laxu;" );
 		return minecraft->m_jenv->GetObjectField( get_minecraft( ), get_screen );
 	}
 
 	jobject get_player( ) {
-		jfieldID get_player = minecraft->m_jenv->GetFieldID( minecraft->m_jenv->GetObjectClass( get_minecraft( ) ), "h", "Lbew;" );
+		jfieldID get_player = minecraft->m_jenv->GetFieldID( minecraft->m_jenv->GetObjectClass( get_minecraft( ) ), "r", "Lbew;" );
 		return minecraft->m_jenv->GetObjectField( get_minecraft( ), get_player );
 	}
 
 	c_rendermanager* get_render_manager( ) {
-		jfieldID render_manager = minecraft->m_jenv->GetFieldID( minecraft->m_jenv->GetObjectClass( get_minecraft( ) ), "aa", "Lbiu;" );
+		jfieldID render_manager = minecraft->m_jenv->GetFieldID( minecraft->m_jenv->GetObjectClass( get_minecraft( ) ), "g", "Lbiu;" );
 		return new c_rendermanager( minecraft->m_jenv->GetObjectField( get_minecraft( ), render_manager ) );
 	}
 
@@ -38,7 +38,7 @@ public:
 	}
 
 	c_world* get_world( ) {
-		jfieldID get_world = minecraft->m_jenv->GetFieldID( minecraft->m_jenv->GetObjectClass( get_minecraft( ) ), "f", "Lbdb;" );
+		jfieldID get_world = minecraft->m_jenv->GetFieldID( minecraft->m_jenv->GetObjectClass( get_minecraft( ) ), "h", "Lbdb;" );
 		return new c_world( minecraft->m_jenv->GetObjectField( get_minecraft( ), get_world ) );
 	}
 };
